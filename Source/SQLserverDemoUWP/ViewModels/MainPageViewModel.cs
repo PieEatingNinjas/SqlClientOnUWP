@@ -53,7 +53,7 @@ namespace SQLserverDemoUWP.ViewModels
         private string _ResultText;
 
         public string ResultText
-        {
+        {l
             get { return _ResultText; }
             set
             {
@@ -80,7 +80,7 @@ namespace SQLserverDemoUWP.ViewModels
                 Result = await Repository.SearchProducts(SearchString);
 
                 if (Result.Any())
-                    ResultText = $"Resutls for {SearchString}:";
+                    ResultText = $"Results for {SearchString}:";
                 else
                     ResultText = $"Search string '{SearchString}' returned no items";
             }
